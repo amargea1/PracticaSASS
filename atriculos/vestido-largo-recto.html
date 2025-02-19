@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Realm</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <label for="submenu-accion"><span>Categorías</span></label>
+                <input type="checkbox" class="submenu-accion" id="submenu-accion">
+                <ul class="submenu">
+                    <li><a href="../outlet.html">Outlet</a></li>
+                    <li><a href="../nueva-temporada.html">Nueva temporada</a></li>
+                    <li><a href="../rebajas.html">Rebajas</a></li>
+                    <li><a href="../oferta.html">Oferta</a></li>
+                    <li><a href="../index.html">Ver todo</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="logo">
+            <img src="../image/logo.png" alt="Logo">
+            <span>Fashion Realm</span>
+        </div>
+        <div class="tema">
+            <button id="theme-toggle">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+</header>
+
+<body>
+    <div class="mensaje-envios">
+        <p>Envíos gratuitos para pedidos superiores a 30€</p>
+    </div>
+
+    <div class="producto-detalle">
+        <div class="producto-imagenes">
+            <div class="imagen-principal">
+                <img src="../image/pexels-godisable-jacob-226636-1936854.jpg" alt="Vestido largo recto">
+            </div>
+        </div>
+        
+        <div class="producto-info">
+            <h1>Vestido largo recto</h1>
+            <p class="precio">48.99 €</p>
+            <span class="categoria rebajas">Rebajas</span>
+            
+            <div class="seleccion-talla">
+                <p>Selecciona tu talla</p>
+                <div class="tallas-container">
+                    <input type="radio" id="talla-s" name="talla" value="S">
+                    <label for="talla-s">S</label>
+
+                    <input type="radio" id="talla-m" name="talla" value="M">
+                    <label for="talla-m">M</label>
+
+                    <input type="radio" id="talla-l" name="talla" value="L">
+                    <label for="talla-l">L</label>
+
+                    <input type="radio" id="talla-xl" name="talla" value="XL">
+                    <label for="talla-xl">XL</label>
+                </div>
+            </div>
+
+            <div class="guia-tallas">
+                <a href="#" class="guia-link">Guía de tallas</a>
+            </div>
+
+            <button class="añadir-carrito">Añadir al carrito</button>
+
+            <div class="descripcion">
+                <h2>Descripción</h2>
+                <p>Vestido largo recto, una prenda elegante y sencilla que ofrece un estilo clásico y sofisticado.  
+                Confeccionado en un tejido suave y cómodo, este vestido se ajusta perfectamente al cuerpo, creando una  
+                silueta fluida y estilizada. Su corte recto y su longitud maxi lo convierten en una opción ideal para  
+                ocasiones formales, bodas, cenas o eventos especiales. Su diseño atemporal te permitirá lucir siempre a la moda,  
+                mientras que su versatilidad te permite combinarlo con diferentes accesorios y calzado.</p>
+                
+                <h3>Características</h3>
+                <ul>
+                    <li>Material: 100% poliéster, seda o mezcla de tejidos suaves</li>
+                    <li>Corte recto que cae suavemente desde el pecho hasta el dobladillo</li>
+                    <li>Escote redondo o en V, según el modelo</li>
+                    <li>Sin mangas o mangas cortas según estilo</li>
+                    <li>Tejido ligero, ideal para eventos de primavera o verano</li>
+                    <li>Disponible en varios colores y tamaños</li>
+                </ul>
+            
+                <h3>Cuidados</h3>
+                <ul class="cuidados">
+                    <li><i class="fas fa-tshirt"></i> Lavado a máquina máx. 30°C</li>
+                    <li><i class="fas fa-temperature-low"></i> Planchar a baja temperatura</li>
+                    <li><i class="fas fa-tint-slash"></i> No usar lejía</li>
+                </ul>
+            </div>                                              
+            
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+
+<footer>
+    <div class="footer-cont">
+        <div class="contacto">
+            <h1>Contacto</h1>
+            <p>Contacta con nosotros</p>
+            <a href="#">Atención al cliente</a>
+            <p>¿Tienes dudas?</p>
+            <a href="#">Preguntas frecuentes</a>
+        </div>
+        <div class="redes">
+            <h1>Síguenos</h1>
+            <div class="redes-container">
+                <a href="https://www.facebook.com/"><img src="../image/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="../image/instagram.png" alt="instagram"></a>
+                <a href="https://www.x.com/"><img src="../image/gorjeo.png" alt="x"></a>
+            </div>
+        </div>
+        <div class="conocenos">
+            <h1>Conócenos mejor</h1>
+            <input type="checkbox" id="conocenos-toggle" class="toggle-checkbox">
+            <label for="conocenos-toggle" class="toggle-label">
+                Quiénes somos
+                <i class="fas fa-chevron-down"></i>
+            </label>
+            <div class="conocenos-text">
+                <p>En Fashion Realm, nuestra misión es ofrecer ropa moderna, cómoda y accesible para hombres y mujeres
+                    que desean expresar su estilo único.
+                    Nos especializamos en traer las últimas tendencias de moda, seleccionadas cuidadosamente para que
+                    encuentres lo que necesitas para cada ocasión.
+                    Desde básicos esenciales hasta piezas de vanguardia, nuestro catálogo está diseñado para adaptarse a
+                    tu estilo de vida y personalidad.
+                    Creemos que la moda no tiene que ser complicada, por eso ofrecemos una experiencia de compra fácil y
+                    agradable, tanto online como en nuestras tiendas físicas.
+                    Nos enorgullece ofrecer calidad, variedad y atención al detalle en cada uno de nuestros productos.
+                    Trabajamos con marcas de confianza y diseñadores emergentes, asegurando que cada prenda que
+                    encuentres en nuestra tienda sea tan única como tú.
+                    Ya sea que estés buscando un conjunto para el día a día o algo especial para un evento importante,
+                    en Fashion Realm tenemos algo para ti.
+                    Únete a nuestra comunidad y descubre la ropa que te hará sentir increíble, por dentro y por fuera.
+                </p>
+            </div>
+        </div>
+
+</footer>
+
+</html>

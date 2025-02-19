@@ -1,0 +1,251 @@
+footer {
+  background-color: $bg-footer;
+  padding: 60px 0 40px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+
+  .footer-cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+
+    .contacto,
+    .redes,
+    .conocenos {
+      flex: 1;
+      min-width: 280px;
+
+      h1 {
+        font-size: 22px;
+        margin-bottom: 25px;
+        color: $text-footer;
+        position: relative;
+        font-weight: 600;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -8px;
+          width: 40px;
+          height: 3px;
+          background-color: $text-footer;
+          border-radius: 2px;
+        }
+      }
+
+      p {
+        font-size: 15px;
+        color: $parrap-footer;
+        margin-bottom: 15px;
+        line-height: 1.6;
+      }
+    }
+
+    .contacto {
+      p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      a {
+        color: $parrap-footer;
+        text-decoration: none;
+        @include transition-all;
+        display: inline-block;
+        margin-bottom: 10px;
+
+        @media (min-width: 1025px) { 
+          &:hover {
+            color: $text-footer;
+          }
+        }
+      }
+    }
+
+    .redes {
+      .redes-container {
+        display: flex;
+        gap: 1px;
+        margin-top: 20px;
+      }
+
+      a {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include transition-all;
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
+
+        @media (min-width: 1025px) { 
+          @include hover-effect(rgba(255, 255, 255, 0.2));
+        }
+      }
+    }
+
+    .conocenos {
+      .toggle-label {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: $parrap-footer;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 8px 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        @include transition-all;
+
+        @media (min-width: 1025px) { 
+          @include hover-effect(rgba(255, 255, 255, 0.15));
+        }
+
+        i {
+          margin-left: 10px;
+          transition: transform 0.3s ease;
+        }
+      }
+
+      .toggle-checkbox {
+        display: none;
+
+        &:checked + .toggle-label i {
+          transform: rotate(180deg);
+        }
+
+        &:checked ~ .conocenos-text {
+          max-height: 500px;
+          opacity: 1;
+        }
+      }
+
+      .conocenos-text {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        margin-top: 15px;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+        
+        p {
+          padding: 0 20px;
+          margin-bottom: 15px;
+          font-size: 14px;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 0;
+
+    .footer-cont {
+      padding: 0 20px;
+      gap: 30px;
+      flex-direction: column;
+      align-items: center;
+
+      .contacto,
+      .redes,
+      .conocenos {
+        text-align: center;
+        flex: 1 1 100%;
+
+        h1 {
+          text-align: center;
+          
+          &::after {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+        p {
+          text-align: center;
+          justify-content: center;
+        }
+      }
+
+      .redes .redes-container {
+        justify-content: center;
+        flex-direction: row;
+      }
+
+      .conocenos {
+        .toggle-label {
+          justify-content: center;
+        }
+
+        .conocenos-text {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+body.oscuro{
+  footer{
+    background-color: $negro;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .footer-cont{
+    .contacto,
+    .redes,
+    .conocenos {
+      h1{
+        color: $blanco;
+        &::after{
+          background-color: $blanco-oscuro;
+        }
+      }
+
+      p{
+        color: $blanco;
+      }
+
+      a{
+        color: $blanco;
+      }
+
+      .toggle-label{
+        color: $blanco-oscuro;
+        background-color: $negro;
+      }
+
+      .toggle-checkbox{
+        color: $blanco-oscuro;
+      }
+
+      .redes-container{
+        a{
+          background-color: $blanco-oscuro;
+          
+        }
+      }
+    }
+  }
+}

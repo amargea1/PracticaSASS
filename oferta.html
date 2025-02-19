@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Realm</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <label for="submenu-accion"><span>Categorías</span></label>
+                <input type="checkbox" class="submenu-accion" id="submenu-accion">
+                <ul class="submenu">
+                    <li><a href="outlet.html">Outlet</a></li>
+                    <li><a href="nueva-temporada.html">Nueva temporada</a></li>
+                    <li><a href="rebajas.html">Rebajas</a></li>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li><a href="index.html">Ver todo</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo">
+            <a href="#inicio">Fashion Realm</a>
+        </div>
+        <div class="tema">
+            <button id="theme-toggle">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+</header>
+
+<body class="pagina-oferta" id="inicio">
+
+    <div class="mensaje-envios">
+        <p>Envíos gratuitos para pedidos superiores a 30€</p>
+    </div>
+
+    <div class="filtros-container">
+        <div class="filtros">
+            <button class="activo" data-filtro="todos">Todos</button>
+            <button data-filtro="camisetas">Camisetas</button>
+            <button data-filtro="camisas">Camisas</button>
+            <button data-filtro="jerseys">Jerseys</button>
+            <button data-filtro="sudaderas">Sudaderas</button>
+            <button data-filtro="pantalones">Pantalones</button>
+            <button data-filtro="shorts">Shorts</button>
+            <button data-filtro="faldas">Faldas</button>
+            <button data-filtro="vestidos">Vestidos</button>
+            <button data-filtro="abrigos">Abrigos</button>
+            <button data-filtro="chaquetas">Chaquetas</button>
+            <button data-filtro="calzado">Calzado</button>
+            <button data-filtro="conjuntos">Conjuntos</button>
+        </div>
+
+        <div class="filtros-genero">
+            <button class="activo" data-genero="todos">Todos</button>
+            <button data-genero="hombre">Hombre</button>
+            <button data-genero="mujer">Mujer</button>
+        </div>
+    </div>
+    <div class="contenedor">
+
+        <div class="tarjeta oferta" data-categoria="conjuntos" data-genero="mujer">
+            <a href="atriculos/traje-mujer-3-piezas.html">
+                <img src="image/pexels-429124762-15921053.webp" alt="Traje mujer 3 piezas">
+                <h1>Traje mujer 3 piezas</h1>
+                <p>80 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="camisetas" data-genero="mujer">
+            <a href="atriculos/camiseta-cuello-barco.html">
+                <img src="image/pexels-aksakal-30576237.webp" alt="Camiseta cuello barco">
+                <h1>Camiseta cuello barco</h1>
+                <p>27 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="chaquetas" data-genero="mujer">
+            <a href="atriculos/chaleco-de-punto.html">
+                <img src="image/pexels-anj-namoro-1479642-2850487.webp" alt="Chaleco de punto">
+                <h1>Chaleco de punto</h1>
+                <p>30 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="conjuntos" data-genero="mujer">
+            <a href="atriculos/traje-mujer-2-piezas.html">
+                <img src="image/pexels-cottonbro-4937223.webp" alt="Traje mujer 2 piezas">
+                <h1>Traje mujer 2 piezas</h1>
+                <p>75 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="conjuntos" data-genero="mujer">
+            <a href="atriculos/conjunto-mujer.html">
+                <img src="image/pexels-cottonbro-4937449.webp" alt="Conjunto mujer">
+                <h1>Conjunto mujer</h1>
+                <p>77 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="jerseys" data-genero="hombre">
+            <a href="atriculos/jesey-hombre-cuello-redondo.html">
+                <img src="image/pexels-cottonbro-6626903.webp" alt="Jersey hombre cuello redondo">
+                <h1>Jersey hombre cuello redondo</h1>
+                <p>28 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="chaquetas" data-genero="mujer">
+            <a href="atriculos/americana-mujer-cuadros.html">
+                <img src="image/pexels-frendsmans-3765550.webp" alt="Americana mujer cuadros">
+                <h1>Americana mujer cuadros</h1>
+                <p>38.99 €</p>
+                <button class="boton-comprar">Comprar</button>  
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="sudaderas" data-genero="mujer">
+            <a href="atriculos/sudadera-mujer-con-capucha.html">
+                <img src="image/pexels-gabby-k-6311613.webp" alt="Sudadera mujer con capucha">
+                <h1>Sudadera mujer con capucha</h1>
+                <p>25 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="sudaderas" data-genero="mujer">
+            <a href="atriculos/sudadera-mujer-con-capucha.html">
+                <img src="image/pexels-gabby-k-6311662.webp" alt="Sudadera mujer con capucha">
+                <h1>Sudadera mujer con capucha</h1>
+                <p>25 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="jerseys" data-genero="mujer">
+            <a href="atriculos/jesey-mujer-con-manga-estampada.html">
+                <img src="image/pexels-godisable-jacob-226636-794062.webp" alt="Jersey mujer con manga estampada">
+                <h1>Jersey mujer con manga estampada</h1>
+                <p>22 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="vestidos" data-genero="mujer">
+            <a href="atriculos/vestido-mujer-estampado-floral.html">
+                <img src="image/pexels-godisable-jacob-226636-1024036.webp" alt="Vestido mujer estampado floral">
+                <h1>Vestido mujer estampado floral</h1>
+                <p>39.99 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="shorts" data-genero="hombre">
+            <a href="atriculos/shorts-vaqueros-hombre.html">
+                <img src="image/pexels-jibarofoto-30710029.webp" alt="Shorts vaqueros hombre">
+                <h1>Shorts vaqueros hombre</h1>
+                <p>29.99 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="pantalones" data-genero="hombre">
+            <a href="atriculos/vaqueros-anchos-rasgados-hombre.html">
+                <img src="image/pexels-jibarofoto-30710037.webp" alt="Vaqueros anchos rasgados hombre">
+                <h1>Vaqueros anchos rasgados hombre</h1>
+                <p>26.99 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="pantalones" data-genero="hombre">
+            <a href="atriculos/vaqueros-ajustados-hombre.html">
+                <img src="image/pexels-jibarofoto-30710244.webp" alt="Vaqueros ajustados hombre">
+                <h1>Vaqueros ajustados hombre</h1>
+                <p>23.99 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="sudaderas" data-genero="hombre">
+            <a href="atriculos/sudadera-con-capucha-hombre2.html">
+                <img src="image/pexels-klaus-nielsen-6303682.webp" alt="Sudadera con capucha hombre">
+                <h1>Sudadera con capucha hombre</h1>
+                <p>25 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="sudaderas" data-genero="mujer">
+            <a href="atriculos/sudadera-mujer-crop.html">
+                <img src="image/pexels-liza-summer-6382700.webp" alt="Sudadera mujer crop">
+                <h1>Sudadera mujer crop</h1>
+                <p>23 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="chaquetas" data-genero="hombre">
+            <a href="atriculos/americana-traje-hombre.html">
+                <img src="image/pexels-mika-photogenius-641920605-30658010.webp" alt="Americana traje hombre">
+                <h1>Americana traje hombre</h1>
+                <p>59.99 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="conjuntos" data-genero="mujer">
+            <a href="atriculos/conjunto-falda-mujer.html">
+                <img src="image/pexels-mika-photogenius-641920605-30698075.webp" alt="conjunto falda mujer">
+                <h1>Conjunto falda mujer</h1>
+                <p>49.99 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="vestidos" data-genero="mujer">
+            <a href="atriculos/vestido-ajustado-floral.html">
+                <img src="image/pexels-mika-photogenius-641920605-30698112.webp" alt="Vestido ajustado floral">
+                <h1>Vestido ajustado floral</h1>
+                <p>49.99 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="camisas" data-genero="mujer">
+            <a href="atriculos/camisa-mujer-estampada.html">
+                <img src="image/pexels-mika-photogenius-641920605-30698136.webp" alt="Camisa mujer estampada">
+                <h1>Camisa mujer estampada</h1>
+                <p>36 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="camisas" data-genero="hombre">
+            <a href="atriculos/camisa-hombre-estampada.html">
+                <img src="image/pexels-mika-photogenius-641920605-30710845.webp" alt="Camisa hombre estampada">
+                <h1>Camisa hombre estampada</h1>
+                <p>35 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="camisas" data-genero="mujer">
+            <a href="atriculos/camisa-mujer.html">
+                <img src="image/pexels-mika-photogenius-641920605-30710898.webp" alt="Camisa mujer">
+                <h1>Camisa mujer</h1>
+                <p>38 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="vestidos" data-genero="mujer">
+            <a href="atriculos/vestido-lentejuelas.html">
+                <img src="image/pexels-vika-glitter-392079-30661345.webp" alt="Vestido lentejuelas">
+                <h1>Vestido lentejuelas</h1>
+                <p>48 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta oferta" data-categoria="camisetas" data-genero="mujer">
+            <a href="atriculos/camisera-crop-estampada-mujer.html">
+                <img src="image/pexels-vika-glitter-392079-30661829.webp" alt="Camisera crop estampada mujer">
+                <h1>Camisera crop estampada mujer</h1>
+                <p>23 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+    
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+
+<footer>
+    <div class="footer-cont">
+        <div class="contacto">
+            <h1>Contacto</h1>
+            <p>Contacta con nosotros</p>
+            <a href="#">Atención al cliente</a>
+            <p>¿Tienes dudas?</p>
+            <a href="#">Preguntas frecuentes</a>
+        </div>
+        <div class="redes">
+            <h1>Síguenos</h1>
+            <div class="redes-container">
+                <a href="https://www.facebook.com/"><img src="image/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="image/instagram.png" alt="instagram"></a>
+                <a href="https://www.x.com/"><img src="image/gorjeo.png" alt="x"></a>
+            </div>
+        </div>
+        <div class="conocenos">
+            <h1>Conócenos mejor</h1>
+            <input type="checkbox" id="conocenos-toggle" class="toggle-checkbox">
+            <label for="conocenos-toggle" class="toggle-label">
+                Quiénes somos
+                <i class="fas fa-chevron-down"></i>
+            </label>
+            <div class="conocenos-text">
+                <p>En Fashion Realm, nuestra misión es ofrecer ropa moderna, cómoda y accesible para hombres y mujeres
+                    que desean expresar su estilo único.
+                    Nos especializamos en traer las últimas tendencias de moda, seleccionadas cuidadosamente para que
+                    encuentres lo que necesitas para cada ocasión.
+                    Desde básicos esenciales hasta piezas de vanguardia, nuestro catálogo está diseñado para adaptarse a
+                    tu estilo de vida y personalidad.
+                    Creemos que la moda no tiene que ser complicada, por eso ofrecemos una experiencia de compra fácil y
+                    agradable, tanto online como en nuestras tiendas físicas.
+                    Nos enorgullece ofrecer calidad, variedad y atención al detalle en cada uno de nuestros productos.
+                    Trabajamos con marcas de confianza y diseñadores emergentes, asegurando que cada prenda que
+                    encuentres en nuestra tienda sea tan única como tú.
+                    Ya sea que estés buscando un conjunto para el día a día o algo especial para un evento importante,
+                    en Fashion Realm tenemos algo para ti.
+                    Únete a nuestra comunidad y descubre la ropa que te hará sentir increíble, por dentro y por fuera.
+                </p>
+            </div>
+        </div>
+
+</footer>
+
+</html>

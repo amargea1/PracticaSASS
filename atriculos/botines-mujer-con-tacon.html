@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Realm</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <label for="submenu-accion"><span>Categorías</span></label>
+                <input type="checkbox" class="submenu-accion" id="submenu-accion">
+                <ul class="submenu">
+                    <li><a href="../outlet.html">Outlet</a></li>
+                    <li><a href="../nueva-temporada.html">Nueva temporada</a></li>
+                    <li><a href="../rebajas.html">Rebajas</a></li>
+                    <li><a href="../oferta.html">Oferta</a></li>
+                    <li><a href="../index.html">Ver todo</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="logo">
+            <img src="../image/logo.png" alt="Logo">
+            <span>Fashion Realm</span>
+        </div>
+        <div class="tema">
+            <button id="theme-toggle">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+</header>
+
+<body>
+    <div class="mensaje-envios">
+        <p>Envíos gratuitos para pedidos superiores a 30€</p>
+    </div>
+
+    <div class="producto-detalle">
+        <div class="producto-imagenes">
+            <div class="imagen-principal">
+                <img src="../image/black-and-nude-boots-on-red.webp" alt="Botines mujer con tacón">
+            </div>
+        </div>
+        
+        <div class="producto-info">
+            
+            <h1>Botines mujer con tacón</h1>
+            <p class="precio">33.99 €</p>
+            <span class="categoria outlet">Outlet</span>
+
+            <div class="seleccion-talla">
+                <p>Selecciona tu talla</p>
+                <div class="tallas-container">
+                    <input type="radio" id="talla-35" name="talla" value="35">
+                    <label for="talla-35">35</label>
+
+                    <input type="radio" id="talla-36" name="talla" value="36">
+                    <label for="talla-36">36</label>
+
+                    <input type="radio" id="talla-37" name="talla" value="37">
+                    <label for="talla-37">37</label>
+
+                    <input type="radio" id="talla-38" name="talla" value="38">
+                    <label for="talla-38">38</label>
+
+                    <input type="radio" id="talla-39" name="talla" value="39">
+                    <label for="talla-39">39</label>
+
+                    <input type="radio" id="talla-40" name="talla" value="40">
+                    <label for="talla-40">40</label>
+
+                    <input type="radio" id="talla-41" name="talla" value="41">
+                    <label for="talla-41">41</label>
+                </div>
+            </div>
+
+            <div class="guia-tallas">
+                <a href="#" class="guia-link">Guía de tallas</a>
+            </div>
+
+            <button class="añadir-carrito">Añadir al carrito</button>
+
+            <div class="descripcion">
+                <h2>Descripción</h2>
+                <p>Botines elegantes y modernos diseñados para la mujer actual. 
+                Confeccionados con materiales de alta calidad que garantizan durabilidad y confort. 
+                El tacón estilizado proporciona una altura cómoda y elegante, mientras que su diseño 
+                versátil los hace perfectos para cualquier ocasión, desde una jornada laboral hasta 
+                una salida nocturna. Los detalles cuidadosamente seleccionados aportan un toque de 
+                distinción a estos botines atemporales.</p>
+                
+                <h3>Características</h3>
+                <ul>
+                    <li>Material exterior: Piel sintética de alta calidad</li>
+                    <li>Forro interior: Textil transpirable</li>
+                    <li>Suela antideslizante de goma</li>
+                    <li>Cierre con cremallera lateral</li>
+                    <li>Altura del tacón: 7 cm</li>
+                    <li>Altura del botín: 11 cm</li>
+                    <li>Color: Negro</li>
+                    <li>Plantilla acolchada extraíble</li>
+                    <li>Tacón ancho estable</li>
+                    <li>Puntera redondeada</li>
+                </ul>
+
+                <h3>Cuidados</h3>
+                <ul class="cuidados">
+                    <li><i class="fas fa-brush"></i> Limpiar con paño suave</li>
+                    <li><i class="fas fa-tint-slash"></i> Usar limpiador específico para piel sintética</li>
+                    <li><i class="fas fa-cloud-rain"></i> Proteger de la lluvia intensa</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+
+<footer>
+    <div class="footer-cont">
+        <div class="contacto">
+            <h1>Contacto</h1>
+            <p>Contacta con nosotros</p>
+            <a href="#">Atención al cliente</a>
+            <p>¿Tienes dudas?</p>
+            <a href="#">Preguntas frecuentes</a>
+        </div>
+        <div class="redes">
+            <h1>Síguenos</h1>
+            <div class="redes-container">
+                <a href="https://www.facebook.com/"><img src="../image/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="../image/instagram.png" alt="instagram"></a>
+                <a href="https://www.x.com/"><img src="../image/gorjeo.png" alt="x"></a>
+            </div>
+        </div>
+        <div class="conocenos">
+            <h1>Conócenos mejor</h1>
+            <input type="checkbox" id="conocenos-toggle" class="toggle-checkbox">
+            <label for="conocenos-toggle" class="toggle-label">
+                Quiénes somos
+                <i class="fas fa-chevron-down"></i>
+            </label>
+            <div class="conocenos-text">
+                <p>En Fashion Realm, nuestra misión es ofrecer ropa moderna, cómoda y accesible para hombres y mujeres
+                    que desean expresar su estilo único.
+                    Nos especializamos en traer las últimas tendencias de moda, seleccionadas cuidadosamente para que
+                    encuentres lo que necesitas para cada ocasión.
+                    Desde básicos esenciales hasta piezas de vanguardia, nuestro catálogo está diseñado para adaptarse a
+                    tu estilo de vida y personalidad.
+                    Creemos que la moda no tiene que ser complicada, por eso ofrecemos una experiencia de compra fácil y
+                    agradable, tanto online como en nuestras tiendas físicas.
+                    Nos enorgullece ofrecer calidad, variedad y atención al detalle en cada uno de nuestros productos.
+                    Trabajamos con marcas de confianza y diseñadores emergentes, asegurando que cada prenda que
+                    encuentres en nuestra tienda sea tan única como tú.
+                    Ya sea que estés buscando un conjunto para el día a día o algo especial para un evento importante,
+                    en Fashion Realm tenemos algo para ti.
+                    Únete a nuestra comunidad y descubre la ropa que te hará sentir increíble, por dentro y por fuera.
+                </p>
+            </div>
+        </div>
+
+</footer>
+
+</html>

@@ -1,0 +1,123 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin boton-estilo($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  @media (min-width: 1025px) {
+    &:hover {
+      background-color: lighten($bg-color, 10%);
+    }
+  }
+}
+
+@mixin titulo($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+@mixin categoria-estilo($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+@mixin texto-estilo($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+@mixin contenedor-flex($gap: 5px, $wrap: wrap) {
+  display: flex;
+  gap: $gap;
+  flex-wrap: $wrap;
+}
+
+@mixin tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 280px;
+  position: relative;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: $blanco;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 40px;
+}
+
+@mixin animacion-rotar-logo {
+  @keyframes rotarLogo {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@mixin transition-all($duration: 0.3s, $ease: ease) {
+  transition: all $duration $ease;
+}
+
+@mixin hover-effect($bg-color, $transform: translateY(-3px)) {
+  @include transition-all;
+  &:hover {
+    background-color: $bg-color;
+    transform: $transform;
+  }
+}
+
+
+@mixin button-styles($bg-color, $text-color, $border-color: $gris) {
+  padding: 8px 16px;
+  border: solid 1px $border-color;
+  border-radius: 5px;
+  background-color: $bg-color;
+  color: $text-color;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 13px;
+
+
+
+  &.activo {
+    background-color: $botones-filtros;
+    color: $blanco;
+  }
+}
+
+@mixin label-badge($content, $bg-color, $text-color, $position: top) {
+  &::before {
+    content: $content;
+    position: absolute;
+    $position: 10px;
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 3px;
+    z-index: 1;
+    top: 10px;
+    padding: 5px 10px;
+  }
+}
+
+@mixin card-hover {
+  @media (min-width: 1025px) {
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

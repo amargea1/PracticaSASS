@@ -1,0 +1,232 @@
+.producto-detalle {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  gap: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .producto-imagenes {
+    flex: 1;
+
+    .imagen-principal {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .producto-info {
+    flex: 1;
+    padding: 10px 10px 10px 0;
+
+    h1 {
+      @include texto-estilo(24px, $negro);
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .precio {
+      font-size: 24px;
+      font-weight: 600;
+      color: $gris-oscuro;
+      margin-bottom: 25px;
+    }
+
+    .seleccion-talla {
+      margin: 20px 0;
+
+      p {
+        @include texto-estilo(16px, $negro);
+        margin-bottom: 15px;
+      }
+
+      .tallas-container {
+        @include contenedor-flex;
+
+        input[type="radio"] {
+          display: none;
+
+          &:checked + label {
+            @include categoria-estilo($negro, $blanco);
+            border-color: $negro;
+          }
+        }
+
+        label {
+          @include flex-center;
+          width: 45px;
+          height: 45px;
+          border: 2px solid $gris;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          font-size: 15px;
+          font-weight: 500;
+
+          @media (min-width: 1025px) {
+            &:hover {
+              border-color: $negro;
+            }
+          }
+        }
+      }
+    }
+
+    .guia-tallas {
+      margin-bottom: 25px;
+
+      .guia-link {
+        @include texto-estilo(14px, $gris-oscuro);
+        text-decoration: underline;
+      }
+    }
+
+    .añadir-carrito {
+      width: 100%;
+      padding: 15px;
+      @include boton-estilo($boton-añadir-carrito, $blanco);
+      transition: background-color 0.3s ease;
+
+      @media (min-width: 1025px) {
+        &:hover {
+          background-color: lighten($boton-añadir-carrito, 10%);
+        }
+      }
+    }
+
+    .descripcion {
+      margin-top: 40px;
+
+      h2 {
+        @include titulo(20px, $negro);
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        @include titulo(18px, $negro);
+        margin: 20px 0 10px;
+      }
+
+      p {
+        @include texto-estilo(14px, $gris-oscuro);
+        line-height: 1.6;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+          @include texto-estilo(14px, $gris-oscuro);
+          margin-bottom: 8px;
+        }
+      }
+
+      .cuidados {
+        @include contenedor-flex(20px);
+
+        li {
+          @include flex-center;
+          gap: 8px;
+          font-size: 14px;
+
+          i {
+            color: $negro;
+          }
+        }
+      }
+    }
+
+    .categoria {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 3px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+
+      &.outlet {
+        @include categoria-estilo($negro, $blanco);
+      }
+
+      &.nueva-temp {
+        @include categoria-estilo($boton-comprar-nt, $blanco);
+      }
+
+      &.rebajas {
+        @include categoria-estilo($boton-rebajas, $negro);
+      }
+
+      &.oferta {
+        @include categoria-estilo($boton-oferta, $blanco);
+      }
+    }
+  }
+}
+
+// Tema oscuro
+body.oscuro {
+  background-color: $color-oscuro;
+  color: $blanco;
+
+  .producto-info {
+    h1 {
+      @include titulo(28px, $blanco);
+    }
+
+    .precio {
+      color: $blanco;
+    }
+
+    .seleccion-talla {
+      label,
+      p {
+        color: $blanco;
+      }
+    }
+
+    .guia-tallas {
+      .guia-link {
+        color: $gris;
+      }
+    }
+
+    .añadir-carrito {
+      @include boton-estilo($boton-comprar-oscuro, $blanco);
+
+      @media (min-width: 1025px) {
+        &:hover {
+          background-color: darken($boton-comprar-oscuro, 10%);
+        }
+      }
+    }
+
+    .descripcion {
+      p,
+      h2,
+      h3,
+      li {
+        color: $blanco !important;
+      }
+    }
+
+    .categoria {
+      &.rebajas {
+        background-color: darken($boton-rebajas, 50%);
+        color: $blanco;
+      }
+
+      &.nueva-temp {
+        background-color: darken($boton-comprar-nt, 30%);
+        color: $blanco;
+      }
+    }
+  }
+}

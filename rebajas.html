@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Realm</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <label for="submenu-accion"><span>Categorías</span></label>
+                <input type="checkbox" class="submenu-accion" id="submenu-accion">
+                <ul class="submenu">
+                    <li><a href="outlet.html">Outlet</a></li>
+                    <li><a href="nueva-temporada.html">Nueva temporada</a></li>
+                    <li><a href="rebajas.html">Rebajas</a></li>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li><a href="index.html">Ver todo</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo">
+            <a href="#inicio">Fashion Realm</a>
+        </div>
+        <div class="tema">
+            <button id="theme-toggle">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+        </div>
+    </nav>
+
+</header>
+
+<body class="pagina-rebajas" id="inicio">
+
+    <div class="mensaje-envios">
+        <p>Envíos gratuitos para pedidos superiores a 30€</p>
+    </div>
+
+    <div class="filtros-container">
+        <div class="filtros">
+            <button class="activo" data-filtro="todos">Todos</button>
+            <button data-filtro="camisetas">Camisetas</button>
+            <button data-filtro="camisas">Camisas</button>
+            <button data-filtro="jerseys">Jerseys</button>
+            <button data-filtro="sudaderas">Sudaderas</button>
+            <button data-filtro="pantalones">Pantalones</button>
+            <button data-filtro="shorts">Shorts</button>
+            <button data-filtro="faldas">Faldas</button>
+            <button data-filtro="vestidos">Vestidos</button>
+            <button data-filtro="abrigos">Abrigos</button>
+            <button data-filtro="chaquetas">Chaquetas</button>
+            <button data-filtro="calzado">Calzado</button>
+            <button data-filtro="conjuntos">Conjuntos</button>
+        </div>
+
+        <div class="filtros-genero">
+            <button class="activo" data-genero="todos">Todos</button>
+            <button data-genero="hombre">Hombre</button>
+            <button data-genero="mujer">Mujer</button>
+        </div>
+    </div>
+    <div class="contenedor">
+
+        <div class="tarjeta rebajas" data-categoria="camisas" data-genero="hombre">
+            <a href="atriculos/camisa-estampada-hombre.html">
+                <img src="image/young-man-leans-on-wall.webp" alt="Camisa estampada hombre">
+                <h1>Camisa estampada hombre</h1>
+                <p>26 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="camisetas" data-genero="mujer">
+            <a href="atriculos/top-manga-corta-mujer.html">
+                <img src="image/young-model-stands-in-front-of-shelf.webp" alt="Top manga corta mujer">
+                <h1>Top manga corta mujer</h1>
+                <p>20 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="shorts" data-genero="mujer">
+            <a href="atriculos/shorts-mujer.html">
+                <img src="image/young-pretty-brunette-woman-posing-beige-marble-background-wearing-linen-beige-shorts-caramel-leather-luxury-bag-white-shirt-gold-accessories-street-style-outfit.webp" alt="Shorts mujer">
+                <h1>Shorts mujer</h1>
+                <p>32 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="camisetas" data-genero="mujer">
+            <a href="atriculos/camiseta-de-punto-media-manga.html">
+                <img src="image/young-woman-in-comfortable-combo.webp" alt="Camiseta de punto media manga">
+                <h1>Camiseta de punto media manga</h1>
+                <p>27 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="calzado" data-genero="hombre">
+            <a href="atriculos/zapatos-de-piel-hombre.html">
+                <img src="image/derby-shoes-men-formal-wear.jpg" alt="Zapatos de piel hombre">
+                <h1>Zapatos de piel hombre</h1>
+                <p>35 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="shorts" data-genero="mujer">
+            <a href="atriculos/shorts-vaqueros-mujer.html">
+                <img src="image/full-length-portrait-young-smiling-beautiful-girl-glasses-summer-wear-holding-glass-bottle.jpg" alt="Shorts vaqueros mujer">
+                <h1>Shorts vaqueros mujer</h1>
+                <p>23 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="calzado" data-genero="mujer">
+            <a href="atriculos/zaparillas-unisex.html">
+                <img src="image/girl-with-orange-shoes.jpg" alt="Zaparillas unisex">
+                <h1>Zaparillas unisex</h1>
+                <p>29.99 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="shorts" data-genero="mujer">
+            <a href="atriculos/shorts-vaqueros-mujer.html">
+                <img src="image/high-fashion-look-glamor-stylish-sexy-smiling-beautiful-sensual-young-woman-model-summer-bright-hipster-cloth-jeans-shorts-street.jpg" alt="Shorts vaqueros mujer">
+                <h1>Shorts vaqueros mujer</h1>
+                <p>25 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="shorts" data-genero="hombre">
+            <a href="atriculos/bermudas-hombre.html">
+                <img src="image/man-black-shorts-summer-apparel-shoot.jpg" alt="Bermudas hombre">
+                <h1>Bermudas hombre</h1>
+                <p>25 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="shorts" data-genero="hombre">
+            <a href="atriculos/shorts-veraniegos-hombre.html">
+                <img src="image/man-shorts-summer-fashion-photoshoot-close-up.jpg" alt="Shorts veraniegos hombre">
+                <h1>Shorts veraniegos hombre</h1>
+                <p>23 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="shorts" data-genero="hombre">
+            <a href="atriculos/bermudas-blancas-hombre.html">
+                <img src="image/men-beige-long-sleeves-shirt-minimal-outfit.jpg" alt="Bermudas blancas hombre">
+                <h1>Bermudas blancas hombre</h1>
+                <p>25.90 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="calzado" data-genero="hombre">
+            <a href="atriculos/botas-de-piel-hombre.html">
+                <img src="image/pair-brown-leather-boots.jpg" alt="Botas de piel hombre">
+                <h1>Botas de piel hombre</h1>
+                <p>32 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="calzado" data-genero="mujer">
+            <a href="atriculos/zaparillas-de-tela-mujer.html">
+                <img src="image/pexels-godisable-jacob-226636-1374910.jpg" alt="Zaparillas de tela mujer">
+                <h1>Zaparillas de tela mujer</h1>
+                <p>34 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="calzado" data-genero="mujer">
+            <a href="atriculos/sandalias-de-tacón.html">
+                <img src="image/pexels-godisable-jacob-226636-2090785.jpg" alt="Sandalias de tacón">
+                <h1>Sandalias de tacón</h1>
+                <p>42 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="calzado" data-genero="hombre">
+            <a href="atriculos/deportivas-hombre.html">
+                <img src="image/pexels-hazardos-1306248.jpg" alt="Deportivas hombre">
+                <h1>Deportivas hombre</h1>
+                <p>34 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="calzado" data-genero="hombre">
+            <a href="atriculos/deportivas-hombre.html">
+                <img src="image/pexels-obviouslyarthur-1102776.jpg" alt="Deportivas hombre">
+                <h1>Deportivas hombre</h1>
+                <p>40 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="shorts" data-genero="mujer">
+            <a href="atriculos/shorts-vaqueros-bajo-descosido.html">
+                <img src="image/white-long-sleeve-t-shirt-women-s-basic-wear-full-body.jpg" alt="Shorts vaqueros bajo descosido">
+                <h1>Shorts vaqueros bajo descosido</h1>
+                <p>20 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="conjuntos" data-genero="mujer">
+            <a href="atriculos/conjunto-deportivo-mujer2.html">
+                <img src="image/woman-dressed-tank-top-shorts-checks-time-smartwatch-poses-bridge-modern-city-building-waits-someone-start-training-together-fitness-routine-health.jpg" alt="Conjunto deportivo mujer">
+                <h1>Conjunto deportivo mujer</h1>
+                <p>35 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="chaquetas" data-genero="mujer">
+            <a href="atriculos/cazadora-de-cuero-mujer.html">
+                <img src="image/leather-jacket-8160456_1920.jpg" alt="Cazadora de cuero mujer">
+                <h1>Cazadora de cuero mujer</h1>
+                <p>80 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="camisetas" data-genero="mujer">
+            <a href="atriculos/crop-top-mujer-blanco.html">
+                <img src="image/pexels-bogdan-orunov-1451673-2800159.jpg" alt="Crop top mujer blanco">
+                <h1>Crop top mujer blanco</h1>
+                <p>17 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="vestidos" data-genero="mujer">
+            <a href="atriculos/vestido-cuadros-mangas-con-volantes.html">
+                <img src="image/pexels-godisable-jacob-226636-833185.jpg" alt="Vestido cuadros mangas con volantes">
+                <h1>Vestido cuadros mangas con volantes</h1>
+                <p>30 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="vestidos" data-genero="mujer">
+            <a href="atriculos/vestido-largo-recto.html">
+                <img src="image/pexels-godisable-jacob-226636-1936854.jpg" alt="Vestido largo recto">
+                <h1>Vestido largo recto</h1>
+                <p>48.99 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="chaquetas" data-genero="mujer">
+            <a href="atriculos/cazadora-de-cuero-verde.html">
+                <img src="image/pexels-jean-daniel-25244460.jpg" alt="Cazadora de cuero verde">
+                <h1>Cazadora de cuero verde</h1>
+                <p>78 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="camisetas" data-genero="mujer">
+            <a href="atriculos/crop-top-manga-corta-mujer.html">
+                <img src="image/pexels-marcelochagas-3334783.jpg" alt="Crop top manga corta mujer">
+                <h1>Crop top manga corta mujer</h1>
+                <p>22 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>    
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="camisetas" data-genero="mujer">
+            <a href="atriculos/crop-top-de-encaje-negro.html">
+                <img src="image/pexels-marlon-alves-2016519-10125596.jpg" alt="Crop top de encaje negro">
+                <h1>Crop top de encaje negro</h1>
+                <p>21 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="camisetas" data-genero="mujer">
+            <a href="atriculos/crop-top-con-mangas-caidas.html">
+                <img src="image/pexels-myca-1152994.jpg" alt="Crop top con mangas caídas">
+                <h1>Crop top con mangas caídas</h1>
+                <p>23 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="faldas" data-genero="mujer">
+            <a href="atriculos/minifalda-de-cuadros-con-vuelo.html">
+                <img src="image/pexels-marlon-alves-2016519-10125609.jpg" alt="Minifalda de cuadros con vuelo">
+                <h1>Minifalda de cuadros con vuelo</h1>
+                <p>29 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="sudaderas" data-genero="mujer">
+            <a href="atriculos/sudadera-crop-mujer.html">
+                <img src="image/pexels-sound-on-3755931.jpg" alt="Sudadera crop mujer">
+                <h1>Sudadera crop mujer</h1>
+                <p>25 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+        <div class="tarjeta rebajas" data-categoria="pantalones" data-genero="mujer">
+            <a href="atriculos/pantalones-ajustados-crema-mujer.html">
+                <img src="image/young-woman-2382231_1920.jpg" alt="Pantalones ajustados crema mujer">
+                <h1>Pantalones ajustados crema mujer</h1>
+                <p>29 €</p>
+                <button class="boton-comprar">Comprar</button>
+            </a>
+        </div>
+
+</div>   
+
+    <script src="js/script.js"></script>
+</body>
+
+
+<footer>
+    <div class="footer-cont">
+        <div class="contacto">
+            <h1>Contacto</h1>
+            <p>Contacta con nosotros</p>
+            <a href="#">Atención al cliente</a>
+            <p>¿Tienes dudas?</p>
+            <a href="#">Preguntas frecuentes</a>
+        </div>
+        <div class="redes">
+            <h1>Síguenos</h1>
+            <div class="redes-container">
+                <a href="https://www.facebook.com/"><img src="image/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="image/instagram.png" alt="instagram"></a>
+                <a href="https://www.x.com/"><img src="image/gorjeo.png" alt="x"></a>
+            </div>
+        </div>
+        <div class="conocenos">
+            <h1>Conócenos mejor</h1>
+            <input type="checkbox" id="conocenos-toggle" class="toggle-checkbox">
+            <label for="conocenos-toggle" class="toggle-label">
+                Quiénes somos
+                <i class="fas fa-chevron-down"></i>
+            </label>
+            <div class="conocenos-text">
+                <p>En Fashion Realm, nuestra misión es ofrecer ropa moderna, cómoda y accesible para hombres y mujeres
+                    que desean expresar su estilo único.
+                    Nos especializamos en traer las últimas tendencias de moda, seleccionadas cuidadosamente para que
+                    encuentres lo que necesitas para cada ocasión.
+                    Desde básicos esenciales hasta piezas de vanguardia, nuestro catálogo está diseñado para adaptarse a
+                    tu estilo de vida y personalidad.
+                    Creemos que la moda no tiene que ser complicada, por eso ofrecemos una experiencia de compra fácil y
+                    agradable, tanto online como en nuestras tiendas físicas.
+                    Nos enorgullece ofrecer calidad, variedad y atención al detalle en cada uno de nuestros productos.
+                    Trabajamos con marcas de confianza y diseñadores emergentes, asegurando que cada prenda que
+                    encuentres en nuestra tienda sea tan única como tú.
+                    Ya sea que estés buscando un conjunto para el día a día o algo especial para un evento importante,
+                    en Fashion Realm tenemos algo para ti.
+                    Únete a nuestra comunidad y descubre la ropa que te hará sentir increíble, por dentro y por fuera.
+                </p>
+            </div>
+        </div>
+
+</footer>
+
+</html>

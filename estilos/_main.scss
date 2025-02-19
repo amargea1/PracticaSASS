@@ -1,0 +1,285 @@
+@import "_variables";
+@import '_mixin';
+
+
+// Estilo para el contenedor de las tarjetas
+.contenedor {
+  @include contenedor-flex(10px, wrap);
+  justify-content: center;
+  margin: 0 auto;
+}
+
+// Estilo general para cada tarjeta
+.tarjeta {
+  @include tarjeta;
+
+  @media (min-width: 1025px) {
+    @include card-hover;
+  }
+
+  a { 
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    @include texto-estilo(15px, $negro);
+    font-weight: 400;
+    margin: 5px 5px;
+    padding: 0 5px;
+    text-align: center;
+    
+  }
+
+  p {
+    @include texto-estilo(18px, $parrap-footer);
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+
+  label {
+    @include texto-estilo(15px, $negro);
+    margin-bottom: 8px;
+  }
+
+  select {
+    font-size: 12px;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid $gris;
+    border-radius: 5px;
+    background-color: $blanco;
+    width: 50%;
+    text-align: center;
+
+    option {
+      padding: 5px;
+    }
+  }
+
+  .boton-comprar {
+    @include button-styles($botones-filtros, $blanco);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0px 20px 0px;
+    font-size: 16px;
+    cursor: pointer;
+
+    @media (min-width: 1025px) {
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($botones-filtros, 10%);
+      }
+    }
+  }
+  &.outlet {
+    @include label-badge("Outlet", $negro, $blanco, absolute);
+    &::before {
+      left: 5px;
+    }
+  }
+
+  &.nueva-temp {
+    @include label-badge("Nueva temporada", $boton-comprar-nt, $blanco, absolute);
+    &::before {
+      left: 5px;
+      
+    }
+  }
+
+  &.rebajas {
+    &::before {
+      content: "Rebajas";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: $boton-rebajas;
+      padding: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 50%;
+      z-index: 1;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &.oferta {
+    &::before {
+      content: "Oferta";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: $boton-oferta;
+      color: $blanco;
+      padding: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 50%;
+      z-index: 1;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+
+.filtros,
+.filtros-genero {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px;
+  margin-top: 15px;
+
+  button {
+    padding: 8px 16px;
+    border: solid 1px $gris;
+    border-radius: 5px;
+    background-color: $blanco;
+    color: $negro;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+
+    @media (min-width: 1025px) {
+    &:hover {
+      background-color: $azul-muy-claro;
+    }
+  }
+
+    &.activo {
+      background-color: $botones-filtros;
+      color: $blanco;
+    }
+    
+  }
+}
+
+.filtros-genero {
+  margin-bottom: 20px;
+}
+
+.mensaje-envios {
+  background-color: rgba($azul-muy-claro, 0.7);
+  text-align: center;
+  padding: 8px;
+  width: 100%;
+  margin-top: 70px;
+
+  p {
+    margin: 0;
+    font-size: 14px;
+    color: $negro;
+    font-weight: 500;
+  }
+}
+
+
+.tema {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+} 
+
+
+// Tema oscuro
+body.oscuro {
+  background-color: $color-oscuro;
+  color: $color-text-oscuro;
+
+  .tema {
+    button {
+      color: $blanco;
+    }
+  }
+
+  .tarjeta {
+    background-color: $color-oscuro;
+    
+    h1 {
+      color: $blanco;
+    }
+
+    p {
+      color: $blanco;
+    }
+
+    .boton-comprar {
+      background-color: $boton-comprar-oscuro;
+    }
+
+    &.rebajas {
+      &::before {
+        background-color: darken($boton-rebajas, 50%);
+      }
+    }
+
+    &.nueva-temp {
+      &::before {
+        background-color: darken($boton-comprar-nt, 30%);
+      }
+    }
+    
+    
+  }
+
+  .filtros,
+  .filtros-genero {
+    button {
+      background-color: $negro;
+      color: $blanco;
+      border-color: $parrap-footer;
+
+      @media (min-width: 1025px) {
+        &:hover {
+          background-color: lighten($negro, 15%);
+        }
+      }
+
+      &.activo {
+        background-color: $boton-comprar-oscuro;
+        color: $blanco;
+      }
+    }
+  }
+
+  .mensaje-envios {
+    background-color: rgba($color-oscuro-mensaje, 0.7);
+    p{
+      color: $blanco;
+    }
+  }
+}
